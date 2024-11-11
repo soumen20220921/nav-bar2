@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ESNext",
+    "module": "CommonJS", // CommonJS for Node compatibility
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/server/**/*"
+  ], // Adjust this path to your server-side code
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

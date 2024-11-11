@@ -1,0 +1,38 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "target": "ESNext", // Use the latest ECMAScript version
+    "module": "ESNext", // ESNext modules for better compatibility with Vite
+    "moduleResolution": "node", // Node-style module resolution
+    "jsx": "react-jsx", // Enables the new JSX Transform for React 17+
+    "baseUrl": ".", // Sets the base path for imports
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ] // Sets up aliasing for cleaner imports
+    },
+    "esModuleInterop": true, // Enables interoperability between CommonJS and ES modules
+    "allowSyntheticDefaultImports": true, // Allows default imports from modules with `export =`
+    "strict": true, // Enables all strict type-checking options
+    "skipLibCheck": true, // Skips type checking for library files (improves performance)
+    "forceConsistentCasingInFileNames": true, // Enforces consistent casing in imports
+    "resolveJsonModule": true, // Allows importing JSON files as modules
+    "isolatedModules": true, // Ensures each file can be transpiled individually
+    "noEmit": true // Disables emitting compiled files; Vite handles this
+  },
+  "include": [
+    "src"
+  ], // Includes all files in the src directory
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Excludes node_modules and build output
+}
